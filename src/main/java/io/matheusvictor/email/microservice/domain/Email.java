@@ -14,7 +14,7 @@ public class Email implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID emailI;
+    private UUID emailId;
 
     private UUID userID;
 
@@ -39,12 +39,12 @@ public class Email implements Serializable {
         this.emailId = emailId;
     }
 
-    public UUID getUserId() {
-        return userId;
+    public UUID getUserID() {
+        return userID;
     }
 
-    public void setUserId(UUID userId) {
-        this.userId = userId;
+    public void setUserID(UUID userID) {
+        this.userID = userID;
     }
 
     public String getEmailFrom() {
